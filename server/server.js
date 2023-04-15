@@ -1,7 +1,7 @@
 const express = require('express')
 const salesRouter = require('./routes/sales.routes')
-// const suppliesRouter = require('./routes/supplies.routes')
-// const reportsRouter = require('./routes/reports.routes')
+const suppliesRouter = require('./routes/supplies.routes')
+const reportsRouter = require('./routes/reports.routes')
 
 require('dotenv').config();
 
@@ -11,8 +11,8 @@ const app = express();
 
 app.use(express.json());
 app.use('/api', salesRouter);
-// app.use('/api', suppliesRouter);
-// app.use('/api', reportsRouter);
+app.use('/api', suppliesRouter);
+app.use('/api', reportsRouter);
 
 app.listen(PORT, (error) => {
     error
