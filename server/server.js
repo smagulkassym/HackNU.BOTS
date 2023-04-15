@@ -1,4 +1,7 @@
 const express = require('express')
+const salesRouter = require('./routes/sales.routes')
+const suppliesRouter = require('./routes/supplies.routes')
+const reportsRouter = require('./routes/reports.routes')
 
 const PORT = 3000;
 
