@@ -5,5 +5,5 @@ Team BOTS
 
 Smagulkassym Arslanov
 Ayan Myrzakhmet
-Duglac
+Zhalgas Sansyzbay
 Batyr Bodaubay
