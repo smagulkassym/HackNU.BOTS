@@ -1,4 +1,9 @@
-# HackNu
-For HackNUUUUU
+# HackNU/2023 Team BOTS 
+HackNU 2023
 
-Batyr BAtyr uyktap zhatyr
+Team BOTS
+
+Smagulkassym Arslanov
+Ayan Myrzakhmet
+Duglac
+Batyr Bodaubay
