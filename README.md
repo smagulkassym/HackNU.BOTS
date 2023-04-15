@@ -1,4 +1,4 @@
-# HackNu
+# HackNU/2023 Team BOTS 
 HackNU 2023
 
 Team BOTS
