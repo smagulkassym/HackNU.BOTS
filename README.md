@@ -65,6 +65,7 @@
 # API Tests
 ## Sale
 1. GET: api/sales?barcode=12334565&fromTime=2022-12-28 11:00:02&toTime=2023-01-05 12:00:02
+```
 response = 
         [
             {
@@ -75,7 +76,9 @@ response =
                 "sale_time": "2022-12-28T05:00:02.000Z"
             }
         ]
+```
 2. GET: api/sales/1
+```
 response = 
         [
             {
@@ -86,7 +89,9 @@ response =
                 "sale_time": "2022-01-01T03:35:31.000Z"
             }
         ]
+```
 3. POST: api/sales
+```
 request = 
         {
             "barcode": 12334565,
@@ -94,13 +99,15 @@ request =
             "quantity": 69,
             "saleTime": "2022-12-26 13:00:07"
         }
-
+```
+```
 response = 
         {
             "id": 98612
         }
-
+```
 4. PUT: api/sales/98612
+```
 request = 
         {
             "barcode": 12334565,
@@ -108,18 +115,23 @@ request =
             "quantity": 70,
             "saleTime": "2022-12-28 15:00:02"
         }
+```
+```
 response = 
         {
 
         }
+```
 5. DELETE: api/sales/98612
+```
 response =
         {
             
         }
-
+```
 ## Supply
 1. GET: api/supplies?barcode=4870204391510&fromTime=2022-12-28 11:00:02&toTime=2023-01-05 12:00:02
+```
 response = 
         [
             {
@@ -130,7 +142,9 @@ response =
                 "supply_time": "2022-12-28T07:27:13.000Z"
             }
         ]
+```
 2. GET: api/supplies/1
+```
 response = 
         [
             {
@@ -141,6 +155,7 @@ response =
                 "supply_time": "2022-01-03T03:20:00.000Z"
             }
         ]
+```
 3. POST: api/supplies
 ```
 request = 
@@ -158,6 +173,7 @@ response =
         }
 ```
 4. PUT: api/supplies/1075
+```
 request = 
         {
             "barcode": 12334565,
@@ -165,18 +181,23 @@ request =
             "quantity": 70,
             "supplyTime": "2022-12-28 15:00:02"
         }
+```
+```
 response = 
         {
 
         }
+```
 5. DELETE: api/supplies/1075
+```
 response =
         {
             
         }
-
+```
 ## Report
 1. GET: api/reports?barcode=48743587&fromTime=2022-01-01 00:00:00&toTime=2023-01-04 15:45:00
+```
 response =
         {
             "barcode": 48743587,
@@ -184,3 +205,4 @@ response =
             "revenue": 7455030,
             "netProfit": 1133910
         }
+```
