@@ -16,7 +16,7 @@ class ReportController{
             console.log(`stdout: ${data}`);
             const response = JSON.parse(data.toString());
             const report = {
-                "barcode": response.barcode,
+                "barcode": parseInt(response.barcode),
                 "quantity": response.quantity,
                 "revenue": response.revenue,
                 "netProfit": response.netProfit
