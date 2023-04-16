@@ -198,3 +198,5 @@ response =
 # SQL
 
 sql_queries folder contains queries that were used to create database, tables and populate them.
+
+# [Drive Link](https://drive.google.com/drive/folders/1Mf0dgPf8sfKAipajwcXChK3Hb9wpJpI2?usp=sharing)
