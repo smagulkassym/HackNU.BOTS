@@ -64,7 +64,23 @@
 
 # API Tests
 ## Sale
-1. 
+1. GET: api/sales?barcode=&fromTime=&toTime=
+2. GET: api/sales/id
+3. POST: api/sales
+{
+  "barcode": 12334565,
+  "price": 123,
+  "quantity": 2,
+  "saleTime": "2022-12-28 11:00:02"
+}
+4. PUT: api/sales/id
+{
+  "barcode": 12334565,
+  "price": 123,
+  "quantity": 2,
+  "saleTime": "2022-12-28 11:00:02"
+}
+5. DELETE: api/sales/id
 
 ## Supply
 1. 
