@@ -64,7 +64,7 @@
 
 # API Tests
 ## Sale
-1. GET: api/sales?barcode=12334565&fromTime=2022-12-28 11:00:02&toTime=2023-01-05 12:00:02
+1. **GET**: api/sales?barcode=12334565&fromTime=2022-12-28 11:00:02&toTime=2023-01-05 12:00:02
 ```
 response = 
         [
@@ -77,7 +77,7 @@ response =
             }
         ]
 ```
-2. GET: api/sales/1
+2. **GET**: api/sales/1
 ```
 response = 
         [
@@ -90,7 +90,7 @@ response =
             }
         ]
 ```
-3. POST: api/sales
+3. **POST**: api/sales
 ```
 request = 
         {
@@ -106,7 +106,7 @@ response =
             "id": 98612
         }
 ```
-4. PUT: api/sales/98612
+4. **PUT**: api/sales/98612
 ```
 request = 
         {
@@ -122,7 +122,7 @@ response =
 
         }
 ```
-5. DELETE: api/sales/98612
+5. **DELETE**: api/sales/98612
 ```
 response =
         {
@@ -130,7 +130,7 @@ response =
         }
 ```
 ## Supply
-1. GET: api/supplies?barcode=4870204391510&fromTime=2022-12-28 11:00:02&toTime=2023-01-05 12:00:02
+1. **GET**: api/supplies?barcode=4870204391510&fromTime=2022-12-28 11:00:02&toTime=2023-01-05 12:00:02
 ```
 response = 
         [
@@ -143,7 +143,7 @@ response =
             }
         ]
 ```
-2. GET: api/supplies/1
+2. **GET**: api/supplies/1
 ```
 response = 
         [
@@ -156,7 +156,7 @@ response =
             }
         ]
 ```
-3. POST: api/supplies
+3. **POST**: api/supplies
 ```
 request = 
         {
@@ -172,7 +172,7 @@ response =
             "id": 1075
         }
 ```
-4. PUT: api/supplies/1075
+4. **PUT**: api/supplies/1075
 ```
 request = 
         {
@@ -188,7 +188,7 @@ response =
 
         }
 ```
-5. DELETE: api/supplies/1075
+5. **DELETE**: api/supplies/1075
 ```
 response =
         {
@@ -196,7 +196,7 @@ response =
         }
 ```
 ## Report
-1. GET: api/reports?barcode=48743587&fromTime=2022-01-01 00:00:00&toTime=2023-01-04 15:45:00
+1. **GET**: api/reports?barcode=48743587&fromTime=2022-01-01 00:00:00&toTime=2023-01-04 15:45:00
 ```
 response =
         {
