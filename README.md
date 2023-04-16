@@ -168,10 +168,10 @@ response =
 
         }
 5. DELETE: api/supplies/1075
-response =
-        {
-            
-        }
+>response =
+>        {
+>            
+>        }
 
 ## Report
 1. GET: api/reports?barcode=48743587&fromTime=2022-01-01 00:00:00&toTime=2023-01-04 15:45:00
