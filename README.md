@@ -61,3 +61,13 @@
 8. 0.06523 seconds
 9. 0.06581 seconds
 10. 0.06470 seconds
+
+# API Tests
+## Sale
+1. 
+
+## Supply
+1. 
+
+## Report
+1. api/reports?barcode=48743587&fromTime=2022-01-01 00:00:00&toTime=2023-01-04 15:45:00
