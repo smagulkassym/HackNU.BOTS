@@ -12,7 +12,7 @@ Batyr Bodaubay
 
 ## Problem
 
-# Umag/ZapisKZ
+### Umag/ZapisKZ
 
 1. API: 
     + Sale (GET, GET, POST, PUT, DELETE), 
@@ -22,20 +22,20 @@ Batyr Bodaubay
 
 ## Stack of Technologies 
 
-# API
+### API
 
 1. NodeJS
 2. Express
 3. pg
 4. dotenv
 
-# Algorithm
+### Algorithm
 
 1. Python
 2. SQLAlchemy
 3. psycopg2-binary
 
-# Database
+### Database
 
 1. PostgreSQL
 2. pgAdmin
