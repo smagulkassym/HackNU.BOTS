@@ -117,11 +117,11 @@ request =
         }
 ```
 ```
-
+empty response
 ```
 5. **DELETE**: api/sales/98612
 ```
-
+empty response
 ```
 ## Supply
 1. **GET**: api/supplies?barcode=4870204391510&fromTime=2022-12-28 11:00:02&toTime=2023-01-05 12:00:02
@@ -177,14 +177,11 @@ request =
         }
 ```
 ```
-response = 
-        {
-
-        }
+empty response
 ```
 5. **DELETE**: api/supplies/1075
 ```
-
+empty response
 ```
 ## Report
 1. **GET**: api/reports?barcode=48743587&fromTime=2022-01-01 00:00:00&toTime=2023-01-04 15:45:00
