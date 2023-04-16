@@ -6,9 +6,13 @@ import time
 import sys
 import json
 
-start_time = time.time()
+DB_USER = 'postgres'
+DB_PASSWORD = '1'
+DB_HOST = 'localhost'
+DB_PORT = '5432'
+DB_NAME = 'umag_hacknu'
 
-engine = create_engine("postgresql+psycopg2://postgres:1@localhost:5432/umag_hacknu")
+engine = create_engine(f'postgresql+psycopg2://{DB_USER}:{DB_PASSWORD}@{DB_HOST}:{DB_PORT}/{DB_NAME}')
 
 def calculate_gross_profit(barcode, fromTime, toTime):
     # SQL queries
@@ -74,9 +78,16 @@ def calculate_gross_profit(barcode, fromTime, toTime):
     # Return result
     return result
     
-   
-# print(calculate_gross_profit('48743587','2022-01-01 00:00:00', '2023-01-04 15:45:00'))
-# response = calculate_gross_profit('48743587','2022-01-01 00:00:00', '2023-01-04 15:45:00')
+##########################   
+# start_time = time.time()
+##########################
+
+#                 TEST
+##########################################
+# barcodeRequest = '48743587'
+# fromTimeRequest = '2022-01-01 00:00:00'
+# toTimeRequest = '2023-01-04 15:45:00'
+##########################################
 
 barcodeRequest = sys.stdin.readline().strip()
 fromTimeRequest = sys.stdin.readline().strip()
@@ -89,9 +100,9 @@ json_response = json.dumps(response)
 sys.stdout.write(json_response)
 
 # print(response)
-# print(json_response)
 
+#################################################
 # end_time = time.time()
 # time_taken = end_time - start_time
-
 # print(f"Time taken: {time_taken:.5f} seconds")
+#################################################
