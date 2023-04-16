@@ -40,26 +40,22 @@ def calculate_gross_profit(barcode, fromTime, toTime):
 
     # Loop through the sales data and calculate the gross profit using the FIFO approach
     for sale in sales:
-        sale_quantity = sale[2]
-        sale_price = sale[1]
-        total_quantity += sale_quantity
-        total_revenue += sale_quantity * sale_price
+        total_quantity += sale[2]
+        total_revenue += sale[2] * sale[1]
 
-        while sale_quantity > 0:
+        while sale[2] > 0:
             if len(supplies) == 0:
                 break
             supply = supplies[0]
-            supply_quantity = supply[2]
-            supply_price = supply[1]
 
-            if sale_quantity >= supply_quantity:
-                total_cost += supply_quantity * supply_price
-                sale_quantity -= supply_quantity
+            if sale[2] >= supply[2]:
+                total_cost += supply[2] * supply[1]
+                sale[2] -= supply[2]
                 supplies.pop(0)
             else:
-                total_cost += sale_quantity * supply_price
-                supplies[0][2] -= sale_quantity
-                sale_quantity = 0
+                total_cost += sale[2] * supply[1]
+                supplies[0][2] -= sale[2]
+                sale[2] = 0
 
     # Calculate the gross profit
     gross_profit = total_revenue - total_cost

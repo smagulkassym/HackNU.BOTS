@@ -51,16 +51,16 @@
 + netProfit: 1133910
 
 ## Time Results:
-1. 0.06364 seconds
-2. 0.06814 seconds
-3. 0.06408 seconds
-4. 0.06508 seconds
-5. 0.06738 seconds
-6. 0.06692 seconds
-7. 0.07098 seconds
-8. 0.06523 seconds
-9. 0.06581 seconds
-10. 0.06470 seconds
+1. 0.05795 seconds
+2. 0.05890 seconds
+3. 0.06200 seconds
+4. 0.06073 seconds
+5. 0.06083 seconds
+6. 0.05790 seconds
+7. 0.06086 seconds
+8. 0.06190 seconds
+9. 0.06070 seconds
+10. 0.05900 seconds
 
 # API Tests
 ## Sale
