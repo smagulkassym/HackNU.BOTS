@@ -1,7 +1,6 @@
 # HackNU/2023 Team BOTS 
-HackNU 2023
 
-Team BOTS
+## Team BOTS
 
 Smagulkassym Arslanov
 
