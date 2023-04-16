@@ -14,8 +14,8 @@ engine = create_engine(f'postgresql+psycopg2://{DB_USER}:{DB_PASSWORD}@{DB_HOST}
 
 def calculate_gross_profit(barcode, fromTime, toTime):
     # SQL queries
-    sql_querySales = f"SELECT barcode, price, quantity, sale_time FROM umag_hacknu.sale WHERE barcode = {barcode} AND sale_time >= timestamp '{fromTime}' AND sale_time <= timestamp '{toTime}';"
-    sql_querySupplies = f"SELECT barcode, price, quantity, supply_time FROM umag_hacknu.supply WHERE barcode = {barcode} AND supply_time <= timestamp '{toTime}';"
+    sql_querySales = f"SELECT barcode, price, quantity FROM umag_hacknu.sale WHERE barcode = {barcode} AND sale_time >= timestamp '{fromTime}' AND sale_time <= timestamp '{toTime}';"
+    sql_querySupplies = f"SELECT barcode, price, quantity FROM umag_hacknu.supply WHERE barcode = {barcode} AND supply_time <= timestamp '{toTime}';"
 
     # Get results from the database
     with engine.connect() as conn:
