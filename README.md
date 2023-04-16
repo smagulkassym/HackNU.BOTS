@@ -2,13 +2,10 @@
 
 ## Team BOTS
 
-[Smagulkassym Arslanov](https://www.linkedin.com/in/smagulkassym/)
-
-Ayan Myrzakhmet
-
-Zhalgas Sansyzbay
-
-Batyr Bodaubay
+1. [Smagulkassym Arslanov](https://www.linkedin.com/in/smagulkassym/)
+2. Ayan Myrzakhmet
+3. Zhalgas Sansyzbay
+4. Batyr Bodaubay
 
 ## Problem
 
