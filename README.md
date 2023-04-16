@@ -64,26 +64,121 @@
 
 # API Tests
 ## Sale
-1. GET: api/sales?barcode=&fromTime=&toTime=
-2. GET: api/sales/id
+1. GET: api/sales?barcode=12334565&fromTime=2022-12-28 11:00:02&toTime=2023-01-05 12:00:02
+response = 
+        [
+            {
+                "id": 98602,
+                "barcode": "12334565",
+                "quantity": 2,
+                "price": 123,
+                "sale_time": "2022-12-28T05:00:02.000Z"
+            }
+        ]
+2. GET: api/sales/1
+response = 
+        [
+            {
+                "id": 1,
+                "barcode": "4870204391510",
+                "quantity": 1,
+                "price": 350,
+                "sale_time": "2022-01-01T03:35:31.000Z"
+            }
+        ]
 3. POST: api/sales
-{
-  "barcode": 12334565,
-  "price": 123,
-  "quantity": 2,
-  "saleTime": "2022-12-28 11:00:02"
-}
-4. PUT: api/sales/id
-{
-  "barcode": 12334565,
-  "price": 123,
-  "quantity": 2,
-  "saleTime": "2022-12-28 11:00:02"
-}
-5. DELETE: api/sales/id
+request = 
+        {
+            "barcode": 12334565,
+            "price": 300,
+            "quantity": 69,
+            "saleTime": "2022-12-26 13:00:07"
+        }
+
+response = 
+        {
+            "id": 98612
+        }
+
+4. PUT: api/sales/98612
+request = 
+        {
+            "barcode": 12334565,
+            "price": 667,
+            "quantity": 70,
+            "saleTime": "2022-12-28 15:00:02"
+        }
+response = 
+        {
+
+        }
+5. DELETE: api/sales/98612
+response =
+        {
+            
+        }
 
 ## Supply
-1. 
+1. GET: api/supplies?barcode=4870204391510&fromTime=2022-12-28 11:00:02&toTime=2023-01-05 12:00:02
+response = 
+        [
+            {
+                "id": 873,
+                "barcode": "4870204391510",
+                "quantity": 240,
+                "price": 310,
+                "supply_time": "2022-12-28T07:27:13.000Z"
+            }
+        ]
+2. GET: api/supplies/1
+response = 
+        [
+            {
+                "id": 1,
+                "barcode": "4870204391510",
+                "quantity": 120,
+                "price": 279,
+                "supply_time": "2022-01-03T03:20:00.000Z"
+            }
+        ]
+3. POST: api/supplies
+request = 
+        {
+            "barcode": 12334565,
+            "price": 300,
+            "quantity": 69,
+            "supplyTime": "2022-12-28 11:00:02"
+        }
+
+response = 
+        {
+            "id": 1075
+        }
+
+4. PUT: api/supplies/1075
+request = 
+        {
+            "barcode": 12334565,
+            "price": 667,
+            "quantity": 70,
+            "supplyTime": "2022-12-28 15:00:02"
+        }
+response = 
+        {
+
+        }
+5. DELETE: api/supplies/1075
+response =
+        {
+            
+        }
 
 ## Report
-1. api/reports?barcode=48743587&fromTime=2022-01-01 00:00:00&toTime=2023-01-04 15:45:00
+1. GET: api/reports?barcode=48743587&fromTime=2022-01-01 00:00:00&toTime=2023-01-04 15:45:00
+response =
+        {
+            "barcode": 48743587,
+            "quantity": 11361,
+            "revenue": 7455030,
+            "netProfit": 1133910
+        }
