@@ -14,7 +14,10 @@ Batyr Bodaubay
 
 # Umag/ZapisKZ
 
-1. API: Sale (GET, GET, POST, PUT, DELETE), Supply (GET, GET, POST, PUT, DELETE), Report (GET)
+1. API: 
+    + Sale (GET, GET, POST, PUT, DELETE), 
+    + Supply (GET, GET, POST, PUT, DELETE), 
+    + Report (GET)
 2. The most efficient algorithm
 
 ## Stack of Technologies 
