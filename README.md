@@ -194,3 +194,7 @@ response =
             "netProfit": 1133910
         }
 ```
+
+# SQL
+
+sql_queries folder contains queries that were used to create database, tables and populate them.
