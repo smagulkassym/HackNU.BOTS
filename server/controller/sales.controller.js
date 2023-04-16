@@ -1,11 +1,6 @@
 const db = require('../db');
 
 class SalesController{
-    // async getSale(req, res) {
-    //     const id = req.params.id
-    //     res.json(`ok ${id}`) // test this
-    // }
-    
     async getSales(req, res) {
         const barcode = req.query.barcode;
         const fromTime = req.query.fromTime;
@@ -16,7 +11,6 @@ class SalesController{
         res.json(sales.rows)
     }
     
-
     async getSale(req, res) {
         const id = req.params.id
         const sale = await db.query(`SELECT * FROM umag_hacknu.sale WHERE id = '${id}'`)

@@ -6,12 +6,8 @@ class ReportController{
         const fromTime = req.query.fromTime;
         const toTime = req.query.toTime;
 
-        // const barcode = '123123';
-        // const fromTime = 666666;
-        // const toTime = 999999;
-
         const pythonScript = spawn('python3', ['./scripts/test.py']);
-
+        
         pythonScript.stdin.write(`${barcode}\n`);
         pythonScript.stdin.write(`${fromTime}\n`);
         pythonScript.stdin.write(`${toTime}\n`);
@@ -21,8 +17,9 @@ class ReportController{
             const response = JSON.parse(data.toString());
             const report = {
                 "barcode": response.barcode,
-                "fromTime": response.fromTime,
-                "toTime": response.toTime
+                "quantity": response.quantity,
+                "revenue": response.revenue,
+                "netProfit": response.netProfit
             }
             res.json(report);
         });
