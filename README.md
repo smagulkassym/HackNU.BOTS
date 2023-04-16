@@ -42,18 +42,18 @@ Batyr Bodaubay
 
 # Time Tests of Algorithm
 
-Data Set: 
+## Data Set: 
 + barcodeRequest = '48743587'
 + fromTimeRequest = '2022-01-01 00:00:00'
 + toTimeRequest = '2023-01-04 15:45:00'
 
-Output:
+## Output:
 + barcode: 48743587, 
 + quantity: 11361, 
 + revenue: 7455030, 
 + netProfit: 1133910
 
-Time Results:
+## Time Results:
 1. 0.06364 seconds
 2. 0.06814 seconds
 3. 0.06408 seconds
